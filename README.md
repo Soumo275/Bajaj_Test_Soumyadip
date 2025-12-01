@@ -7,28 +7,33 @@ This Spring Boot application calls a webhook API, retrieves a JWT token, and sub
 ## Prerequisites
 
 - Java 18 or higher
+
 - Maven
 
 ## Build & Run
 
-1. **Build the project**
-
-````bash
-mvn clean package
-
-2. **Run the JAR**
+1. Build the project
 
 ```bash
-java -jar target/soumo275-0.0.1-SNAPSHOT.jar
 
+mvn  clean  package
+
+```
+
+2. Run the JAR
+
+```bash
+
+java  -jar  target/soumo275-0.0.1-SNAPSHOT.jar
+
+```
 
 The application will:
 
-Call the generateWebhook API.
+- Call the generateWebhook API.
 
-Print the webhook URL and JWT token.
+- Print the webhook URL and JWT token.
 
-Submit the final SQL query to the webhook.
+- Submit the final SQL query to the webhook.
 
-Print the webhook response.
-````
+- Print the webhook response.
